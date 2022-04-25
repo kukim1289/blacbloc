@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blak Blok</title>
+    
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <div id = "topCurtain">
+        <h1 class= "title">Blak Blok</h1>
+    </div>
+    <div id = "container">
+        <div class= "modal-container" id= "modal_container">
+            <div class = "modal">
+                <h2 class="yourTime">Your time:</h2>
+                <p> </p>
+                <h1 class=sumTime id= "summaryTime">'00 : 000'</h1>
+                <button id = "shareThis" class="resultButtons">Share  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bibi-share" viewBox="0 0 16 16">
+                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                  </svg></button>
+            
+            <button class="resultButtons" onclick = "resetAllSquares()" id="close">Play Again!</button>
+            </div> 
+        </div>
+        <div id = "game">
+            <header>
+                
+                <div id = "board-container">
+                    <div id= "board">
+                        <div class="square" ></div>
+                        <div class="square" ></div>
+                        <div class="square" ></div>
+                        <div class="square" ></div>
+                        <div class="square" ></div>
+                        <div class="square" ></div>
+                        <div class="square" ></div>
+                        <div class="square" ></div>
+                        <div class="square" ></div>
+                        <div class="square" ></div>
+                        <div class="square" ></div>
+                        <div class="square" ></div>
+                        <div class="square" ></div>
+                        <div class="square" ></div>
+                        <div class="square" ></div>
+                        <div class="square" ></div>
+                    </div>
+                </div>
+                
+                </div>
+            </header>
+            <div class="timerDisplay">
+                 00 : 000
+             </div>
+
+             <div id= 'totalSquaresSelected'></div>
+             
+
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
