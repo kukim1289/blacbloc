@@ -1,2 +1,2 @@
-# blakblok
+# blakblok.github.io
 simple game
