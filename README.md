@@ -1,2 +1,2 @@
-# blacbloc
+# blakblok
 simple game
