@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/blakblok.github.io/static/css/main.90019d1d.css",
+    "main.js": "/blakblok.github.io/static/js/main.823173f5.js",
+    "static/media/gridwallpaper.jpeg": "/blakblok.github.io/static/media/gridwallpaper.997483f92f772db9b809.jpeg",
+    "index.html": "/blakblok.github.io/index.html",
+    "main.90019d1d.css.map": "/blakblok.github.io/static/css/main.90019d1d.css.map",
+    "main.823173f5.js.map": "/blakblok.github.io/static/js/main.823173f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90019d1d.css",
+    "static/js/main.823173f5.js"
+  ]
+}
