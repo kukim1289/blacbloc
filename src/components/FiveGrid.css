@@ -1,5 +1,5 @@
 .board-container {
-  margin: 30px;
+  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@
 .boardFive {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 20px;
+  grid-gap: 10px;
   padding: 10px;
   box-sizing: border-box;
 }

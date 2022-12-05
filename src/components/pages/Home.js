@@ -31,19 +31,19 @@ function Home() {
         <div className="row">
           <div className="column-left">
             <Link to="/threeGrid" >
-              <button className="chooseButton">GridBlok 9</button>
+              <button className="chooseButton">3x3</button>
             </Link>
           </div>
 
           <div className="column-center">
             <Link to="/fourGrid">
-              <button className="chooseButton">GridBlok 16</button>
+              <button className="chooseButton">4x4</button>
             </Link>
           </div>
 
           <div className="column-right">
             <Link to="/fiveGrid">
-              <button className="chooseButton">GridBlok 25</button>
+              <button className="chooseButton">5x5</button>
             </Link>
           </div>
         </div>
@@ -51,19 +51,19 @@ function Home() {
         <div className="row">
           <div className="column-left">
             <Link to="/speed25" >
-              <button className="chooseButton">SpeedBlok 25</button>
+              <button className="chooseButton">Speed Blok 25</button>
             </Link>
           </div>
 
           <div className="column-center">
             <Link to="/speed50">
-              <button className="chooseButton">SpeedBlok 50</button>
+              <button className="chooseButton">Speed Blok 50</button>
             </Link>
           </div>
 
           <div className="column-right">
             <Link to="/speed100">
-              <button className="chooseButton">SpeedBlok 100</button>
+              <button className="chooseButton">Speed Blok 100</button>
             </Link>
           </div>
         </div>
