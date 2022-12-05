@@ -1,0 +1,61 @@
+
+.yourTime{
+    padding-bottom: 20px;
+}
+
+.resultButtons{
+    background:black;
+    font-size: 25px;
+    color: white;
+    transition-duration: .4s;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.resultButtons:hover{
+    background-color: rgb(218, 218, 218);
+    color: black;
+    border-radius: 8px;
+}
+
+.sumTime{
+    padding-bottom: 30px;
+}
+.modal-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    top:0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(245, 245, 245);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s ease;
+    z-index: 9999;
+}
+
+.modal-container.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal {
+    background-color: white;
+    width:fit-content;
+    height: fit-content;
+    padding: 30px 50px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    align-items: center;
+    
+    
+}
+
+.modal h1 {
+    margin: 0;
+}
+

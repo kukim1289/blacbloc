@@ -1,0 +1,173 @@
+
+.homeSection{
+display:inline-block;
+align-items: center;
+justify-content: center;
+text-align: center;
+    background-image: url('/public/images/gridwallpaper.jpeg');
+    background-position: center;
+    background-size:cover;
+    height: 70vh;
+    width: 100vw;
+margin-bottom: 20px;
+}
+
+.title-text{
+    padding-top: 20px;
+    color: white;
+    font-size: 12vw;
+}
+
+.ruleBlock{
+    display: inline-block;
+    align-items: center;
+    width: auto;
+}
+
+.ruleContainer{
+    width: fit-content;
+    margin: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.gameSection{
+    margin: 20px;
+    
+}
+
+h3{
+    padding-bottom: 2px;
+}
+
+
+.playButton{
+    background:rgb(255, 255, 255);
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    border-width: 2px;
+    transition-duration: .4s;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.chooseButton{
+    background:rgb(255, 255, 255);
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    border-width: 2px;
+    transition-duration: .4s;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.playButton:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    border-width: 2px;
+    border-radius: 8px;
+}
+.chooseButton:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    border-width: 2px;
+    border-radius: 8px;
+}
+
+.row{
+    
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+ 
+    grid-gap: 3px;
+    padding: 5px;
+    
+}
+.column-left{ 
+    text-align: center;
+    align-items: center;
+ 
+}
+
+.column-right{ 
+    text-align: center;
+    align-content: center;
+    
+     }
+
+.column-center{ 
+    text-align: center;
+    align-items: center;
+    }
+
+.chooseGame{
+    margin-bottom: 40px;
+}
+
+.chooseGameTitle{
+    margin-top: 25px;
+    
+}
+
+smallSquare {
+    min-height:20px;
+    min-width: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+
+.small-square-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    overflow: hidden;
+    
+   }
+
+   .small-boardThree {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  .small-boardFour {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  .small-boardFive {
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 3px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+  largeSquare {
+    
+    min-height:70px;
+    min-width: 70px;
+    border: 2px solid black;
+    border-radius: 4px;
+    
+    text-align: center;
+    font-size: x-large;
+  }
+

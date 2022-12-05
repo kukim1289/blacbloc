@@ -1,0 +1,20 @@
+
+square {
+    min-height:60px;
+    min-width: 60px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.black {
+    background-color: black;
+}
+.white{
+    background-color: white;
+}
+#square-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    overflow: hidden;
+   }

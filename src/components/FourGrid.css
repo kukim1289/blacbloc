@@ -1,0 +1,17 @@
+.board-container {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.boardFour {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
