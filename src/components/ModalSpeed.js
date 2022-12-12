@@ -2,7 +2,7 @@ import React from 'react'
 import './Modal.css'
 
 
-function Modal(props) {
+function ModalSpeed(props) {
     
     let finalTime = props.time
     // convert final time into an integer and divide and get times
@@ -20,20 +20,17 @@ function Modal(props) {
                { /* contemplating to add a share button
                <button id = "shareThis" class="resultButtons">Share</button>  */}
             <button onClick={ ()=> {
-                
+                props.squareReset(true);
                 props.setTrigger(false);
                 props.timeReset(0); 
                 props.countReset(0);
-                props.resetter();
-
-                
-                
+            
                 }} class="resultButtons">Play Again!</button>
             </div> 
         </div>
     )
 }
-export default Modal;
+export default ModalSpeed;
 
     
 

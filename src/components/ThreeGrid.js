@@ -62,7 +62,8 @@ const resetSquares = () => {
 
 
   return (
-  <div>
+    <div className="master">
+  <div className="screenContainer">
     <div className="board-container">
       <div className="boardThree">
       {squares.map(square => (
@@ -77,10 +78,9 @@ const resetSquares = () => {
           colorChange={changeColor}
         ></Blok>
     ))}
-
-      
+  </div>
       </div>
-    </div>
+    
 
     <div class="timerDisplay">
         {("0" + Math.floor((time / 60000) % 60)).slice(-2)}:
@@ -98,8 +98,8 @@ const resetSquares = () => {
         />
       )}
    
-      
-      
+ 
+   </div>
     </div>
   )
 }

@@ -35,60 +35,103 @@ function Navbar() {
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           
+          
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <Link to='/threeGrid' className='nav-links' onClick={closeMobileMenu}>
-              GridBlok 9
-              </Link>
-            </li>
             
-            <li className='nav-item'>
-              <Link
-                to='/fourGrid'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >GridBlok 16
-              </Link>
-            </li>
-            
-            <li className='nav-item'>
-              <Link
-                to='/fiveGrid'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                GridBlok 25
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                to='/speed25'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                SpeedBlok 25 
-              </Link>
-            </li>
+            <div className='gameMenu'>
+            <Link
+            to="/threeGrid"
+            className="nav-links"
+            style={{ textDecoration: "none" }}
+            onClick={closeMobileMenu}
+          >
+            <div>
+              <span class="fa-stack fa-2x">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-3 fa-stack-1x fa-inverse"></i>
+              </span>GridBlok 3x3
+              
+            </div>
+          </Link>
 
-            <li className='nav-item'>
-              <Link
-                to='/speed50'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                SpeedBlok 50
-              </Link>
-            </li>
+          <Link
+            to="/fourGrid"
+            className="nav-links"
+            style={{ textDecoration: "none" }}
+            onClick={closeMobileMenu}
+          >
+            <div>
+              <span class="fa-stack fa-2x">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-4 fa-stack-1x fa-inverse"></i>
+              </span>
+              GridBlok 4x4
+            </div>
+          </Link>
 
-            <li className='nav-item'>
-              <Link
-                to='/speed100'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                SpeedBlok 100 
-              </Link>
-            </li>
+          <Link
+            to="/speed25"
+            className="nav-links"
+            style={{ textDecoration: "none" }}
+            onClick={closeMobileMenu}
+          >
+            <div>
+              <span class="fa-stack fa-2x">
+                <i class="fas fa-circle fa-stack-2x" ></i>
+                <i class="fa-solid fa-face-smile fa-stack-1x fa-inverse"></i>
+              </span>
+              SpeedBlok 25
+            </div>
+          </Link>
+
+          <Link
+            to="/speed50"
+            className="nav-links"
+            style={{ textDecoration: "none" }}
+            onClick={closeMobileMenu}
+          >
+            <div>
+              <span class="fa-stack fa-2x">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-face-meh fa-stack-1x fa-inverse"></i>
+              </span>
+              SpeedBlok 50
+            </div>
+          </Link>
+
+          <Link
+            to="/speed100"
+            className="nav-links"
+            style={{ textDecoration: "none" }}
+            onClick={closeMobileMenu}
+          >
+            <div>
+              <span class="fa-stack fa-2x">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-skull fa-stack-1x fa-inverse"></i>
+              </span>
+              SpeedBlok 100
+            </div>
+          </Link>
+
+          <Link
+            to="/About"
+            className="nav-links"
+            style={{ textDecoration: "none" }}
+            onClick={closeMobileMenu}
+          >
+            <div>
+              <span class="fa-stack fa-2x">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-question fa-stack-1x fa-inverse"></i>
+              </span>
+              About
+            </div>
+          </Link>
+
+
+              </div>
+
           </ul>
         </div>
       </nav>

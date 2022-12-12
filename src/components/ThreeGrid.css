@@ -1,7 +1,19 @@
+.screenContainer{
+  display: grid;
+  min-width: 100vw;
+  grid-gap:20px;
+}
+.master{
+  display:flex;
+  min-width: 100vw;
+  min-height: 85vh;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  
+}
 .board-container {
-    margin: 30px;
-    display: flex;
-    justify-content: center;
+justify-content: center;
     align-items: center;
     flex-grow: 1;
     overflow: hidden;
@@ -9,10 +21,12 @@
   
 
   .boardThree {
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 40px;
     padding: 5px;
     box-sizing: border-box;
   }
+
+  
   

@@ -1,76 +1,111 @@
 import React from "react";
 import "./Home.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import Footer from "../Footer";
 
 function Home() {
   return (
     <div>
-      <div className="homeSection">
-        <h1 className="title-text">BlakBlok</h1>
-        <div className="ruleBlock">
-          <div className="ruleContainer">
-            <h2>How to play...</h2>
-            <div className="gameSection">
-              <h3>GridBlok</h3>
-              <p>1. The timer starts once you click on any blok!</p>
-              <p>2. Change all bloks to blak as fast as you can!</p>
-            </div>
-            <div className="gameSection">
-              <h3>SpeedBlok</h3>
-              <p>1. The timer starts once you click the center blok!</p>
-              <p>2. Tap the SpeedBlok as fast as you can!</p>
-            </div>
-          </div>
-        </div>
-    
+
+      <div className="browseContainer">
+      <div className="browseSection">
+<h2 className="browseTitle">Home</h2>
+<p>Select a game mode!</p>
+      </div>
+      <div className="gameIcon">
+      <i class="fa-solid fa-gamepad"></i>
+      </div>
       </div>
 
-      <div className="chooseGame">
-        <h2 className="chooseGameTitle">Choose Game Mode</h2>
+      <div className="gameContainer">
+        <div className="gameSection">
+          <Link
+            to="/threeGrid"
+            className="chooseButton"
+            style={{ textDecoration: "none" }}
+          >
+            <div>
+              <span class="fa-stack fa-2x">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-3 fa-stack-1x fa-inverse"></i>
+              </span>
+              <h4>GridBlok 3x3</h4>
+            </div>
+          </Link>
 
-        <div className="row">
-          <div className="column-left">
-            <Link to="/threeGrid" >
-              <button className="chooseButton">3x3</button>
-            </Link>
-          </div>
+          <Link
+            to="/fourGrid"
+            className="chooseButton"
+            style={{ textDecoration: "none" }}
+          >
+            <div>
+              <span class="fa-stack fa-2x">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-4 fa-stack-1x fa-inverse"></i>
+              </span>
+              <h4>GridBlok 4x4</h4>
+            </div>
+          </Link>
 
-          <div className="column-center">
-            <Link to="/fourGrid">
-              <button className="chooseButton">4x4</button>
-            </Link>
-          </div>
+          <Link
+            to="/speed25"
+            className="chooseButton"
+            style={{ textDecoration: "none" }}
+          >
+            <div>
+              <span class="fa-stack fa-2x">
+                <i class="fas fa-circle fa-stack-2x" ></i>
+                <i class="fa-solid fa-face-smile fa-stack-1x fa-inverse"></i>
+              </span>
+              <h4>SpeedBlok 25</h4>
+            </div>
+          </Link>
 
-          <div className="column-right">
-            <Link to="/fiveGrid">
-              <button className="chooseButton">5x5</button>
-            </Link>
-          </div>
-        </div>
-        
-        <div className="row">
-          <div className="column-left">
-            <Link to="/speed25" >
-              <button className="chooseButton">Speed Blok 25</button>
-            </Link>
-          </div>
+          <Link
+            to="/speed50"
+            className="chooseButton"
+            style={{ textDecoration: "none" }}
+          >
+            <div>
+              <span class="fa-stack fa-2x">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-face-meh fa-stack-1x fa-inverse"></i>
+              </span>
+              <h4>SpeedBlok 50</h4>
+            </div>
+          </Link>
 
-          <div className="column-center">
-            <Link to="/speed50">
-              <button className="chooseButton">Speed Blok 50</button>
-            </Link>
-          </div>
+          <Link
+            to="/speed100"
+            className="chooseButton"
+            style={{ textDecoration: "none" }}
+          >
+            <div>
+              <span class="fa-stack fa-2x">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-skull fa-stack-1x fa-inverse"></i>
+              </span>
+              <h4>SpeedBlok 100</h4>
+            </div>
+          </Link>
 
-          <div className="column-right">
-            <Link to="/speed100">
-              <button className="chooseButton">Speed Blok 100</button>
-            </Link>
-          </div>
+          <Link
+            to="/About"
+            className="chooseButton"
+            style={{ textDecoration: "none" }}
+          >
+            <div>
+              <span class="fa-stack fa-2x">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-question fa-stack-1x fa-inverse"></i>
+              </span>
+              <h4>About</h4>
+            </div>
+          </Link>
         </div>
       </div>
-
-
-
+<Footer/>
+      
     </div>
   );
 }

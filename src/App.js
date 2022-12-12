@@ -29,7 +29,7 @@ function App() {
        <Route path="/speed100" element={<SpeedBlokOneHundred/>}></Route>
 </Routes>
 </div>
-<Footer/>
+
 </>
 
   );

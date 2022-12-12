@@ -1,17 +1,29 @@
-.board-container {
-  margin: 30px;
-  display: flex;
-  justify-content: center;
+
+.screenContainer{
+  display: grid;
+  min-width: 100vw;
+  grid-gap:20px;
+}
+.master{
+  display:flex;
+  min-width: 100vw;
+  min-height: 85vh;
   align-items: center;
-  flex-grow: 1;
-  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+  
+}
+.board-container {
+  justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    overflow: hidden;
 }
 
 .boardFour {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  padding: 10px;
+  grid-gap: 15px;
+  padding: 5px;
   box-sizing: border-box;
 }
-

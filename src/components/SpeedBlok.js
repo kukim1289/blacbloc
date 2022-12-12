@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./SpeedBlok.css";
-import Modal from "./Modal";
+import ModalSpeed from "./ModalSpeed";
 import "./Modal.css";
+import Modal from "./Modal";
 
 function SpeedBlok(props) {
   const [buttonPopup, setButtonPopup] = useState(false);
@@ -54,7 +55,7 @@ function SpeedBlok(props) {
       </div>
 
       {!timerOn && time > 0 && buttonPopup && (
-        <Modal
+        <ModalSpeed
           setTrigger={setButtonPopup}
           time={time}
           timeReset={setTime}

@@ -61,7 +61,9 @@ function FourGrid() {
   
   
     return (
-    <div>
+    
+      <div className="master">
+  <div className="screenContainer">
       <div className="board-container">
         <div className="boardFour">
         {squares.map(square => (
@@ -96,9 +98,7 @@ function FourGrid() {
             resetter={resetSquares}
           />
         )}
-     
-        
-      
+     </div>
       </div>
     )
 }
